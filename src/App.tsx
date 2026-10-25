@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/layout/Navbar';
 import { DashboardView } from './components/dashboard/DashboardView';
 import { WeeklyAssignmentsView } from './components/weekly/WeeklyAssignmentsView';
@@ -224,6 +225,8 @@ export function App() {
         onStartMock={() => {}}
         onStartPractice={handleStartPracticeTest}
       />
+
+      <Analytics />
     </div>
   );
 }
