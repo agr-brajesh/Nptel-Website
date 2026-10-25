@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navbar } from './components/layout/Navbar';
 import { DashboardView } from './components/dashboard/DashboardView';
 import { WeeklyAssignmentsView } from './components/weekly/WeeklyAssignmentsView';
@@ -227,6 +228,7 @@ export function App() {
       />
 
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
